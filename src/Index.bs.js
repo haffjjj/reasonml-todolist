@@ -4,9 +4,19 @@
 var React = require("react");
 var ReactDOMRe = require("reason-react/src/ReactDOMRe.js");
 var Component1$ReactHooksTemplate = require("./Component1.bs.js");
+var Component2$ReactHooksTemplate = require("./Component2.bs.js");
+var Component3$ReactHooksTemplate = require("./Component3.bs.js");
 
 ReactDOMRe.renderToElementWithId(React.createElement(Component1$ReactHooksTemplate.make, {
           message: "Hello! Click this text."
-        }), "index");
+        }), "index1");
+
+ReactDOMRe.renderToElementWithId(React.createElement(Component2$ReactHooksTemplate.make, {
+          greeting: "Hello!"
+        }), "index2");
+
+ReactDOMRe.renderToElementWithId(React.createElement(Component3$ReactHooksTemplate.make, {
+          data: "Hello!"
+        }), "index3");
 
 /*  Not a pure module */

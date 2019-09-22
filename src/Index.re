@@ -1,1 +1,3 @@
-ReactDOMRe.renderToElementWithId(<Component1 message="Hello! Click this text." />, "index");
+ReactDOMRe.renderToElementWithId(<Component1 message="Hello! Click this text." />, "index1");
+ReactDOMRe.renderToElementWithId(<Component2 greeting="Hello!" />, "index2");
+ReactDOMRe.renderToElementWithId(<Component3 data="Hello!" />, "index3");
